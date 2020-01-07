@@ -4,7 +4,6 @@ import SearchQuery from './SearchQuery'
 function App() {
   return (
     <div className="App">
-      {/*<AsyncAutoComplete/>*/}
       <SearchQuery/>
     </div>
   );
