@@ -90,7 +90,6 @@ class Search extends Component {
 
                                 <div>
                                     <p>{result.Title}</p>
-
                                     <img className="image" src={result.Poster} alt={`${result.Year} poster imges of moves with title from omdapi`}/>
                                 </div>
                             </a>
