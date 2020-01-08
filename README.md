@@ -1,4 +1,4 @@
-##Rest API [omdbapi] Movie Search App with React JS
+##Rest API [omdbapi] Movie Search React App
 
 Test live project [click here](http://react-live-search.herokuapp.com/)
 ## Available Scripts

@@ -15,7 +15,9 @@ class Search extends Component {
             currentPageNo: 0
 
         };
-        this.cancel = ''
+        this.apiKey = process.env.REACT_APP_API;
+        this.cancel = '';
+
     }
 
     getPageCount = (total,denominator) =>  {
@@ -27,7 +29,7 @@ class Search extends Component {
 
     fetchSearchResults = (updatedPageNo, query) => {
         const pageNumber = updatedPageNo ? `&page=${updatedPageNo}` : '';
-        const searchUrl = (`http://www.omdbapi.com/?&apikey=72983b7b&s=${query}${pageNumber}`);
+        const searchUrl = (`http://www.omdbapi.com/?&apikey=${this.apiKey}&s=${query}${pageNumber}`);
 
         if( this.cancel ){
             this.cancel.cancel();
@@ -106,7 +108,7 @@ class Search extends Component {
         return (
             <div className="container">
                 {/*{Heading}*/}
-                <div className="heading"> Live Search React Application</div>
+                <div className="heading"> React App Live Movie Search</div>
                 {/*{Search Input}*/}
                 <label className="search-label" htmlFor="search-input">
                     <input type="text"
